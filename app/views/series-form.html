@@ -1,0 +1,24 @@
+<div class="preview container" ng-hide="newShow.name.length === 0">
+  <h4>Preview</h4>
+  <h2>{{newShow.name}}</h2>
+  <div ng-repeat="char in newShow.mainCharacters">
+    <h4>{{char.name}}</h4>
+    <dl>
+      <dt ng-show="char.power">Power</dt>
+      <dd>{{char.power}}</dd>
+      <dt ng-show="char.color">Color</dt>
+      <dd>{{char.color}}</dd>
+    </dl>
+  </div>
+</div>
+<form name="seriesForm" class="form-horizontal form-group" novalidate ng-submit="seriesForm.$valid ? add() : displayErr('INVALID FORM! D:')">
+  <input ng-model="newShow.name" class="form-control form-group" type="text" name="showname" id="showname" value="" placeholder="Show Name" required />
+  <div ng-repeat="char in newShow.mainCharacters">
+    <h4>Add New Character</h4>
+    <input ng-model="char.name" class="form-control form-group" type="text" name="charname" id="charname{{$index}}" value="" placeholder="Character Name" />
+    <input ng-model="char.power" class="form-control form-group" type="text" name="charpower" id="charpower{{$index}}" value="" placeholder="Character Power" />
+    <input ng-model="char.color" class="form-control form-group" type="text" name="charcolor" id="charcolor{{$index}}" value="" placeholder="Character Color" />
+  </div>
+  <input class="btn btn-info" ng-click="newChar()" type="button" value="Add Character" />
+  <input type="submit" value="Save" class="btn btn-primary" />
+</form>

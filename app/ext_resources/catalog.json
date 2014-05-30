@@ -1,0 +1,64 @@
+{
+  "series": [
+    {
+      "name": "Adventure Time",
+      "description": "The adventures of a boy and his dog",
+      "mainCharacters": [
+        {
+          "name": "Jake the Dog",
+          "power": "Being stretchy",
+          "color": "Yellow",
+          "image": "jake.jpg"
+        },
+        {
+          "name": "Finn the Human",
+          "color": "White with blond hair",
+          "image": "finn.jpg"
+        },
+        {
+          "name": "BMO",
+          "power": "Plays videogames",
+          "color": "Blue",
+          "image": "bmo.jpg"
+        }
+      ],
+      "seasons": "5"
+    },
+    {
+      "name": "Regular Show",
+      "description": "The adventures of two friends",
+      "mainCharacters": [
+        {
+          "name": "Mordecai",
+          "power": "Being blue",
+          "color": "Blue",
+          "image": "mordecai.jpg"
+        },
+        {
+          "name": "Rigby",
+          "color": "Brown",
+          "image": "rigby.jpg"
+        }
+      ],
+      "seasons": "3"
+    },
+    {
+      "name": "Attack on Titan",
+      "description": "TITANS WILL EAT US ALL D:",
+      "mainCharacters": [
+        {
+          "name": "Eren",
+          "power": "Turns into a Titan",
+          "image": "eren.jpg"
+        },
+        {
+          "name": "Mikasa",
+          "power": "Awesomeness",
+          "color": "",
+          "image": "mikasa.jpg"
+        }
+      ],
+      "seasons": "1"
+    }
+  ]
+}

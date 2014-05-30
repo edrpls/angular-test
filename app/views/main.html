@@ -1,0 +1,26 @@
+<div class="header">
+  <!-- <ul class="nav nav-pills pull-right">
+    <li class="active"><a ng-href="#">Home</a></li>
+    <li><a ng-href="#">About</a></li>
+    <li><a ng-href="#">Contact</a></li>
+  </ul> -->
+  <h3 class="text-muted">Angular Thingy</h3>
+</div>
+
+<div class="jumbotron">
+  <h1>Series Guide</h1>
+  <p class="lead">
+    Your Angular series guide.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-click="fetchSeries()" ng-href="#">Fetch Shows</a></p>
+  <p><a class="btn btn-lg" ng-click="addShows()" ng-href="#">Add Show</a></p>
+</div>
+
+<div>
+  <series-list ng-show="showList"></series-list>
+  <series-form ng-show="showForm"></series-form>
+</div>
+
+<div class="footer">
+  <p>Angular Thingy</p>
+</div>

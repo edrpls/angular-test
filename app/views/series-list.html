@@ -1,0 +1,17 @@
+<div ng-repeat="show in series" class="row marketing" ng-show="showsLength > 0" >
+  <h2><a ng-click="setVisible($index)" ng-href="#">{{show.name}}</a></h2>
+  <p>{{show.description}}</p>
+  <div ng-show="isVisible === $index" class="row">
+    <h3>Characters</h3>
+    <div ng-repeat="char in show.mainCharacters" class="col-md-6 characters">
+      <img ng-src="/images/{{char.image}}" alt="{{char.name}}" class="thumb"/>
+      <h4>{{char.name}}</h4>
+      <dl>
+        <dt ng-show="char.power">Power</dt>
+        <dd>{{char.power}}</dd>
+        <dt ng-show="char.color">Color</dt>
+        <dd>{{char.color}}</dd>
+      </dl>
+    </div>
+  </div>
+</div>
