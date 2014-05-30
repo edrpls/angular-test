@@ -1,10 +1,10 @@
 angular-test
 ============
 
-Small AngularJS app that shows the framework awesomeness
+Small AngularJS app that shows the framework's awesomeness.
 
 ============
 
-npm install inside root dir to install every node/bowe/grunt dependency needed.
+npm install inside root dir to install every node/bower/grunt dependency needed.
 
 Yo'
